@@ -1,0 +1,167 @@
+body {
+	background-color: #e9e7e9;
+}
+nav {
+	height: 140px;
+	background-color: #227ebb;
+	font-size: 140%;
+	font-family: sans-serif;
+	padding: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	border-radius: 8px;
+}
+a {
+	text-decoration: none;
+	color: white;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 8px;
+}
+#default-flex {
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+nav a:hover {
+	background-color: rgba(1, 158, 249, 0.7);
+	border-radius: 5px;
+}
+#logo {
+	height: 130px;
+	margin-left: 5px;
+	left: 5px;
+}
+
+#contact-us-div {
+	color: white;
+	position: absolute;
+	right: 15px;
+	top: 3px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-item {
+	margin-right: 10px;
+}
+.fa-phone {
+	font-size: 199%;
+	color: #cc0033;
+	margin-top: 14px;
+}
+#container-one {
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 125px;
+	margin-right: 125px;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 2;
+	background: url("doctor-1.jpg") 0 0 no-repeat;
+	background-size: cover;
+}
+#color-overlay {
+	background-color: rgba(1, 158, 249, 0.75);
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+#container-two {
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-left: 125px;
+	margin-right: 125px;
+	/*Will pick btw these two*/
+	background-color: #97d9eb;
+	background: linear-gradient(to left, #227ebb, #7c9ccf);
+	height: 375px;
+	display: flex;
+	opacity: 0.9;
+	justify-content: center;
+	align-items: center;
+}
+#mini-box-1 {
+	margin-left: 55px;
+	margin-top: 25px;
+	height: 325px;
+	width: 300px;
+}
+#mini-box-1 p {
+	text-align: center;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 115%;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+#doc-info {
+	margin-left: 100px;
+	margin-top: 18px;
+	margin-right: 3px;
+	height: 80%;
+	width: 60%;
+	border-radius: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	font-size: 109%;
+	line-height: 25px;
+}
+#dr-pic {
+	height: 300px;
+	width: 300px;
+}
+#myDiv {
+	height: 100%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.myText {
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	color: white;
+	font-size: 150%;
+	font-family: sans-serif;
+}
+.big {
+	font-size: 250%;
+}
+.middle {
+	font-size: 175%;
+}
+.small {
+	font-size: 100%;
+}
+.keywords {
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+footer {
+	height: 50px;
+	margin-top: 15px;
+	border-radius: 7px;
+	background-color: #227ebb;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+footer a:hover {
+	background-color: rgba(1, 158, 249, 0.7);
+	border-radius: 5px;
+}
