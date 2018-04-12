@@ -60,7 +60,7 @@ nav a:hover {
 	background: url("doctor-1.jpg") 0 0 no-repeat;
 	background-size: cover;
 }
-#color-overlay {
+.color-overlay {
 	background-color: rgba(1, 158, 249, 0.75);
 	margin: 0;
 	overflow: hidden;
@@ -81,6 +81,21 @@ nav a:hover {
 	justify-content: center;
 	align-items: center;
 }
+#container-three {
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-left: 125px;
+	margin-right: 125px;
+	color: white;
+	/*Will pick btw these two*/
+	background-color: #019ef9;
+	/*background: linear-gradient(to left, #227ebb, #7c9ccf);
+  */
+	height: 375px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 #mini-box-1 {
 	margin-left: 55px;
 	margin-top: 25px;
@@ -97,10 +112,10 @@ nav a:hover {
 	margin-top: 0px;
 	margin-bottom: 15px;
 }
-#doc-info {
-	margin-left: 100px;
+.doc-info {
+	margin-left: auto;
 	margin-top: 18px;
-	margin-right: 3px;
+	margin-right: auto;
 	height: 80%;
 	width: 60%;
 	border-radius: 10px;
@@ -150,16 +165,46 @@ nav a:hover {
 	text-decoration: underline;
 	text-transform: capitalize;
 }
+#podiatry-pic {
+	background: url("barefoot-feet.jpg") 0 0 no-repeat;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80%;
+	width: 35%;
+	text-align: center;
+}
+#podiatry-info {
+	height: 80%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.foot-info {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 125%;
+	font-family: sans-serif;
+	line-height: 25px;
+}
+
 footer {
-	height: 50px;
-	margin-top: 15px;
+	color: white;
+	height: 95px;
+	margin-top: 8px;
+	margin-bottom: 5px;
 	border-radius: 7px;
 	background-color: #227ebb;
 	font-family: sans-serif;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-item {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 footer a:hover {
 	background-color: rgba(1, 158, 249, 0.7);
