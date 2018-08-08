@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="394px" height="57px" viewBox="0 0 394 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#40B2FB" offset="0%"></stop>
+            <stop stop-color="#36A9FC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1-Copy" transform="translate(-1424.000000, -483.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1920" height="1080"></rect>
+            <g id="Group-3" transform="translate(1424.000000, 483.000000)">
+                <path d="M14.0866631,53.0902822 C7.03937079,56.7782285 0.0680445653,56.6862371 0.0680445653,56.6862371 C-0.199272513,56.6927936 -0.248311043,56.5713301 -0.02116743,56.4195088 C-0.02116743,56.4195088 5.78169355,52.8515244 6.71302696,46.886541 C6.99041407,45.1099383 7.1463913,42.7458019 7.22867333,40.301711 C7.20455327,39.9255034 7.19230768,39.5460576 7.19230768,39.1637446 L7.19230768,17.5029221 C7.19230768,7.83632515 15.0254158,0 24.6843335,0 L376.366949,0 C386.027528,0 393.858974,7.83462009 393.858974,17.5029221 L393.858974,39.1637446 C393.858974,48.8303415 386.025866,56.6666667 376.366949,56.6666667 L24.6843335,56.6666667 C20.7003752,56.6666667 17.0274943,55.3342466 14.0866631,53.0902822 Z" id="Bubble" fill="url(#linearGradient-1)" transform="translate(196.929487, 28.337289) scale(-1, 1) translate(-196.929487, -28.337289) "></path>
+                <text id="Why-would-she-do-tha" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="30" font-weight="300" letter-spacing="-0.239999995" fill="#FFFFFF">
+                    <tspan x="18" y="38.3333333">Why would she do that?</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
