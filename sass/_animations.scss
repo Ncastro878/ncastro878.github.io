@@ -1,0 +1,54 @@
+
+.animated{
+  transition: all .6s;
+}
+#tammystick_1{
+  margin-top: 300px;
+  width: 105px;
+  transition: all 1.2s;
+}
+.money-bag{
+  width: 45px;
+  z-index: -1;
+}
+#five-bags, #four-bags, #three-bags{
+  visibility: hidden;
+}
+.animation_1{
+
+}
+.animation_2{
+
+}
+.animation_3{
+
+}
+.right-column{
+  padding-left: 50px;
+}
+.text-images-container{
+  display: inline-block;
+  width: 100%;
+   margin-bottom: 20px;
+  &__text-msg{
+    transition: all .5s;
+    &-1{
+      width: 200px;
+      width: 0;
+    }
+    &-2{
+      width: 200px;
+      float: right;
+      width: 0;
+    }
+    &-3{
+      width: 200px;
+      width: 0;
+    }
+    &-4{
+      float: right;
+      width: 75px;
+      width: 0;
+    }
+  }
+}

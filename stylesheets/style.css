@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/_general.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../tax_calc_background.png");
+  padding-bottom: 100px;
+}
+
+/* line 3, ../sass/_index.scss */
+.header-container {
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 11, ../sass/_index.scss */
+#taxin {
+  font-weight: 600;
+  position: relative;
+}
+/* line 14, ../sass/_index.scss */
+#taxin:before {
+  position: absolute;
+  content: "";
+  border-top: 4px solid #EC4447;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -o-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+}
+
+/* line 28, ../sass/_index.scss */
+#tammy {
+  font-weight: 300;
+  color: #EC4447;
+}
+
+/* line 33, ../sass/_index.scss */
+.calculator-container {
+  width: 100%;
+  height: 446px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #bbb;
+}
+/* line 39, ../sass/_index.scss */
+.calculator-container__black-screen {
+  background-color: black;
+  width: 100%;
+  height: 91px;
+  color: white;
+  position: relative;
+}
+/* line 45, ../sass/_index.scss */
+.calculator-container__black-screen--text {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 71%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 55, ../sass/_index.scss */
+.calculator-container__row {
+  width: 100%;
+  height: 71px;
+}
+/* line 58, ../sass/_index.scss */
+.calculator-container__row--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 64, ../sass/_index.scss */
+.calculator-container__row--button {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  border: 1px solid #aaa;
+  float: left;
+  font-size: 30px;
+  background-color: white;
+}
+/* line 73, ../sass/_index.scss */
+.calculator-container__row--button:hover {
+  background-color: #eee;
+}
+/* line 76, ../sass/_index.scss */
+.calculator-container__row--button-long {
+  width: 50%;
+  height: 100%;
+}
+
+/* line 83, ../sass/_index.scss */
+.left-column {
+  text-align: center;
+}
+
+/* line 86, ../sass/_index.scss */
+.box-for-bags {
+  background: inherit;
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 200px;
+    height: auto;
+  }
+}
+/* line 104, ../sass/_index.scss */
+.red {
+  background-color: #EC4447;
+  color: white;
+}
+/* line 107, ../sass/_index.scss */
+.red:hover {
+  background-color: white;
+  color: #EC4447;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 114, ../sass/_index.scss */
+  .calculator-container {
+    width: 300px;
+  }
+}
+/* line 2, ../sass/_animations.scss */
+.animated {
+  transition: all .6s;
+}
+
+/* line 5, ../sass/_animations.scss */
+#tammystick_1 {
+  margin-top: 300px;
+  width: 105px;
+  transition: all 1.2s;
+}
+
+/* line 10, ../sass/_animations.scss */
+.money-bag {
+  width: 45px;
+  z-index: -1;
+}
+
+/* line 14, ../sass/_animations.scss */
+#five-bags, #four-bags, #three-bags {
+  visibility: hidden;
+}
+
+/* line 26, ../sass/_animations.scss */
+.right-column {
+  padding-left: 50px;
+}
+
+/* line 29, ../sass/_animations.scss */
+.text-images-container {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 33, ../sass/_animations.scss */
+.text-images-container__text-msg {
+  transition: all .5s;
+}
+/* line 35, ../sass/_animations.scss */
+.text-images-container__text-msg-1 {
+  width: 200px;
+  width: 0;
+}
+/* line 39, ../sass/_animations.scss */
+.text-images-container__text-msg-2 {
+  width: 200px;
+  float: right;
+  width: 0;
+}
+/* line 44, ../sass/_animations.scss */
+.text-images-container__text-msg-3 {
+  width: 200px;
+  width: 0;
+}
+/* line 48, ../sass/_animations.scss */
+.text-images-container__text-msg-4 {
+  float: right;
+  width: 75px;
+  width: 0;
+}
+
+/* line 1, ../sass/_marriage.scss */
+.marriage-page {
+  display: none;
+}
+/* line 3, ../sass/_marriage.scss */
+.marriage-page__results-box {
+  text-align: center;
+}
+/* line 6, ../sass/_marriage.scss */
+.marriage-page__results-box--box {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #EC4649;
+  color: white;
+  font-size: 30px;
+  margin-top: 140px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* line 18, ../sass/_marriage.scss */
+.marriage-page__question {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 80px;
+}
+/* line 24, ../sass/_marriage.scss */
+.marriage-page__answer-container {
+  text-align: center;
+  margin-top: 100px;
+}
+/* line 27, ../sass/_marriage.scss */
+.marriage-page__answer-container--answer {
+  margin-right: 25px;
+  font-size: 50px;
+  font-weight: 500;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 15px 30px;
+}
+/* line 34, ../sass/_marriage.scss */
+.marriage-page__answer-container--answer:hover {
+  background-color: #EC4649;
+  color: white;
+  cursor: pointer;
+}
+/* line 41, ../sass/_marriage.scss */
+.marriage-page__tammy-stick {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  width: 110px;
+}
+
+/* line 48, ../sass/_marriage.scss */
+.chosen {
+  background-color: #EC4649;
+  color: white;
+}
+
+/* line 1, ../sass/_results.scss */
+.results-section {
+  display: none;
+}
+/* line 3, ../sass/_results.scss */
+.results-section__left-column {
+  text-align: center;
+}
+/* line 5, ../sass/_results.scss */
+.results-section__left-column--pic {
+  width: 225px;
+  margin-top: 180px;
+}
+/* line 9, ../sass/_results.scss */
+.results-section__left-column--text {
+  font-size: 29px;
+  margin-top: 40px;
+}
+/* line 16, ../sass/_results.scss */
+.results-section__right-column--container {
+  width: 85%;
+  margin-top: 80px;
+  box-shadow: 3px 5px 10px #888888;
+  border: 1px solid black;
+  background-color: white;
+}
+/* line 23, ../sass/_results.scss */
+.results-section__right-column--form {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 28, ../sass/_results.scss */
+.results-section__right-column--input {
+  display: block;
+  width: 100%;
+  height: 55px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+/* line 36, ../sass/_results.scss */
+.results-section__right-column--input::placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #ccc;
+}
+/* line 43, ../sass/_results.scss */
+.results-section__right-column--label {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+/* line 48, ../sass/_results.scss */
+.results-section__right-column--box {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 52, ../sass/_results.scss */
+.results-section__right-column--button {
+  color: white;
+  background-color: #EC4649;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  padding: 15px 15px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+/* line 66, ../sass/_results.scss */
+.highlight {
+  font-weight: 600;
+  color: #EC4649;
+}
