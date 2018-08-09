@@ -403,12 +403,23 @@ body {
   color: #EC4649;
 }
 
-/* line 2, ../sass/_mobile.scss */
+@media only screen and (max-width: 776px) {
+  /* line 3, ../sass/_mobile.scss */
+  .mobile-intro {
+    display: block !important;
+  }
+
+  /* line 6, ../sass/_mobile.scss */
+  #calculator-page {
+    display: none !important;
+  }
+}
+/* line 10, ../sass/_mobile.scss */
 .mobile-intro {
   display: none;
   overflow: hidden;
 }
-/* line 6, ../sass/_mobile.scss */
+/* line 14, ../sass/_mobile.scss */
 .mobile-intro__header {
   display: inline-block;
   text-align: center;
@@ -419,11 +430,11 @@ body {
   margin-bottom: 20px;
   width: 100%;
 }
-/* line 22, ../sass/_mobile.scss */
+/* line 30, ../sass/_mobile.scss */
 .mobile-intro__h1 {
   display: inline-block;
 }
-/* line 26, ../sass/_mobile.scss */
+/* line 34, ../sass/_mobile.scss */
 .mobile-intro__tammy {
   position: relative;
   top: 50%;
@@ -432,12 +443,12 @@ body {
   animation-fill-mode: forwards;
   display: block;
 }
-/* line 35, ../sass/_mobile.scss */
+/* line 43, ../sass/_mobile.scss */
 .mobile-intro__texts-container {
   animation: test 8.2s;
   animation-fill-mode: forwards;
 }
-/* line 38, ../sass/_mobile.scss */
+/* line 46, ../sass/_mobile.scss */
 .mobile-intro__texts-container--img1 {
   display: block;
   margin-left: 10px;
@@ -446,7 +457,7 @@ body {
   animation: bubble_one 8s;
   animation-fill-mode: forwards;
 }
-/* line 47, ../sass/_mobile.scss */
+/* line 55, ../sass/_mobile.scss */
 .mobile-intro__texts-container--img2 {
   display: block;
   width: 0;
@@ -455,7 +466,7 @@ body {
   animation: bubble_two 8s;
   animation-fill-mode: forwards;
 }
-/* line 58, ../sass/_mobile.scss */
+/* line 66, ../sass/_mobile.scss */
 .mobile-intro__calculator-container {
   opacity: 0;
   width: 92%;
@@ -464,7 +475,7 @@ body {
   animation: fadeIn 10.4s;
   animation-fill-mode: forwards;
 }
-/* line 68, ../sass/_mobile.scss */
+/* line 76, ../sass/_mobile.scss */
 .mobile-intro__marriage-page--answer {
   width: 70%;
   margin-right: 25px;
@@ -476,29 +487,33 @@ body {
   margin-top: 15px;
 }
 
-/* line 80, ../sass/_mobile.scss */
+/* line 89, ../sass/_mobile.scss */
 .mobile-results-section__left-column--pic {
   width: 75%;
 }
 
-/* line 83, ../sass/_mobile.scss */
+/* line 92, ../sass/_mobile.scss */
 .mobile-form {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px !important;
 }
 
-@media only screen and (max-width: 776px) {
-  /* line 89, ../sass/_mobile.scss */
-  .mobile-intro {
-    display: block;
-  }
-
-  /* line 92, ../sass/_mobile.scss */
-  #calculator-page {
-    display: none;
-  }
+/* line 97, ../sass/_mobile.scss */
+.mobile-marriage-page__box {
+  margin-top: 50px !important;
 }
+
+/* line 100, ../sass/_mobile.scss */
+.mobile-marriage-page__answer-container {
+  margin-top: 70px;
+}
+
+/* line 103, ../sass/_mobile.scss */
+.mobile-marriage-page__question {
+  margin-top: 60px !important;
+}
+
 @keyframes fadeIn {
   80% {
     opacity: 0;

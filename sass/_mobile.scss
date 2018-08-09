@@ -1,4 +1,12 @@
 
+@media only screen and (max-width:776px){
+  .mobile-intro{
+    display: block !important;
+  }
+  #calculator-page{
+    display: none !important;
+  }
+}
 .mobile-intro{
   display: none;
   overflow: hidden;
@@ -75,6 +83,7 @@
         padding: 15px 30px;
         margin-top: 15px;
       }
+
    }
 }//end of .mobile-intro
 .mobile-results-section__left-column--pic{
@@ -85,13 +94,14 @@
   margin-right: auto;
   margin-top: 20px !important;
 }
-@media only screen and (max-width:776px){
-  .mobile-intro{
-    display: block;
-  }
-  #calculator-page{
-    display: none;
-  }
+.mobile-marriage-page__box{
+  margin-top: 50px !important;
+}
+.mobile-marriage-page__answer-container{
+  margin-top: 70px;
+}
+.mobile-marriage-page__question{
+  margin-top: 60px !important;
 }
 @keyframes fadeIn{
   80%{
