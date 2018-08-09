@@ -316,8 +316,8 @@ body {
 
 /* line 48, ../sass/_marriage.scss */
 .chosen {
-  background-color: #EC4649;
-  color: white;
+  background-color: #EC4649 !important;
+  color: white !important;
 }
 
 /* line 1, ../sass/_results.scss */

@@ -145,17 +145,24 @@ function transitionToMobileMarriageScreen(){
   mobileMarriagePage.style.display = "block";
 }
 function marriageAnswer(answer){
+  // background-color: #EC4649 !important;
+  // color: white !important;
   if(answer === 'married'){
     married = true;
     document.getElementById('married').classList.add('chosen');
     document.getElementById('single').classList.remove('chosen');
 
+    document.getElementById('married-mobile').classList.add('chosen');
+    document.getElementById('single-mobile').classList.remove('chosen');
   }else if(answer === 'single'){
     married = false;
     document.getElementById('single').classList.add('chosen');
     document.getElementById('married').classList.remove('chosen');
 
+    document.getElementById('single-mobile').classList.add('chosen');
+    document.getElementById('married-mobile').classList.remove('chosen');
   }
+  console.log("marriage clicked");
 }
 function getResultsSection(){
   var marriageSection = document.getElementById('marriage-page');
