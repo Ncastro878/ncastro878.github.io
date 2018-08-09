@@ -30,7 +30,11 @@
     <div class="mobile-intro">
 
       <div class="mobile-intro__header">
-        <h1 class="mobile-intro__h1"><span id="taxin">Taxin'</span> <span id="tammy">Tammy</span></h1>
+        <h1 class="mobile-intro__h1">
+          <div class="header-animation-container">
+            <span id="taxin">Taxin'</span> <span id="tammy">Tammy</span>
+          </div>
+                  </h1>
         <img class="mobile-intro__tammy" src="tammystick.png" alt="">
 
         <div class="mobile-intro__texts-container">
@@ -43,7 +47,7 @@
         <div id="mobile-calculator" class="mobile-intro__calculator-container">
 
           <div class="calculator-container__black-screen">
-            <div id="black-screen" class="calculator-container__black-screen--text">Enter Your Zip Code</div>
+            <div id="mobile-black-screen" class="calculator-container__black-screen--text">Enter Your Zip Code</div>
           </div>
 
           <div class="calculator-container__row">
@@ -119,12 +123,11 @@
 
                     <div class="results-section__right-column--box">
                       <label class="results-section__right-column--label" for="email">Email</label>
-                      <input placeholder="JohnSmith@GMail.com" class="results-section__right-column--input" type="text" name="email" value="">
+                      <input placeholder="JohnSmith@Gmail.com" class="results-section__right-column--input" type="text" name="email" value="">
                     </div>
 
                     <div class="" style="text-align:center;">
                       <div onclick="submitResults()" class="results-section__right-column--button">Get Your Receipt</div>
-
                     </div>
 
                   </form>
@@ -243,8 +246,8 @@
         <div onclick="marriageAnswer('single')" id="single" class="marriage-page__answer-container--answer">Single</div>
       </div>
 
-      <div onclick="getResultsSection()" class="marriage-page__results-box">
-        <div class="marriage-page__results-box--box">
+      <div class="marriage-page__results-box">
+        <div onclick="getResultsSection()"  class="marriage-page__results-box--box">
           Get Your Results
         </div>
       </div>
@@ -255,7 +258,7 @@
         <div class="results-section__left-column col-sm-6">
           <img class="results-section__left-column--pic " src="tammy_pic.png" alt="">
           <div class="results-section__left-column--text">
-            Tammy Baldwin Voted For You To <span class="highlight">Lose</span> $x,xxx this year
+            Tammy Baldwin Voted For You To <span class="highlight">Lose</span> $<span id="tax-amount">x,xxx</span> this year
           </div>
         </div>
         <div class="results-section__right-column col-sm-6">

@@ -1,4 +1,5 @@
 var blackScreenElement = document.getElementById('black-screen');
+var mobileBlackScreenElement = document.getElementById('mobile-black-screen');
 var tammyStick1 = document.getElementById('tammystick_1');
 var fiveBags = document.getElementById('five-bags');
 var fourBags = document.getElementById('four-bags');
@@ -22,23 +23,24 @@ function equalClicked(){
   // Verify the enteredText somehow.
   if(phase === 0){
     zipCode = enteredText;
-    blackScreenElement.innerHTML = "Enter Your Salary";
+    if( verifyZipIsOkay(zipCode) ){
+      blackScreenElement.innerHTML = "Enter Your Salary";
+    }else{
+      blackScreenElement.innerHTML = "Enter a Valid Zipcode";
+      doesBlackScreenHaveText = true;
+      return;
+    }
   }else if(phase === 1){
     salary = enteredText;
     blackScreenElement.innerHTML = 'Click the (=) button to proceed';
-
-    setTimeout(function(){
-    }, 1000);
   }else if(phase === 2){
     clearBlackScreen;
     transitionToMarriageScreen();
-
-    setTimeout(function(){
-    }, 2000);
   }
   animationRaise();
   doesBlackScreenHaveText = true;
   salaryTextPresent = true;
+  console.log("Phase is currently", phase);
 }
 
 function mobileEqualClicked(){
@@ -46,17 +48,19 @@ function mobileEqualClicked(){
   // Verify the enteredText somehow.
   if(phase === 0){
     zipCode = enteredText;
-    blackScreenElement.innerHTML = "Enter Your Salary";
+    if( verifyZipIsOkay(zipCode) ){
+      mobileBlackScreenElement.innerHTML = "Enter Your Salary";
+    }else{
+      mobileBlackScreenElement.innerHTML = "Enter a Valid Zipcode";
+      doesBlackScreenHaveText = true;
+      return;
+    }
   }else if(phase === 1){
     salary = enteredText;
-    blackScreenElement.innerHTML = 'Click the (=) button to proceed';
-
-    setTimeout(function(){
-    }, 1000);
+    mobileBlackScreenElement.innerHTML = 'Click the (=) button to proceed';
   }else if(phase === 2){
     clearBlackScreen;
     transitionToMobileMarriageScreen();
-
   }
   phase++;
   doesBlackScreenHaveText = true;
@@ -66,15 +70,19 @@ function mobileEqualClicked(){
 function clearTextOffScreen(){
   if (doesBlackScreenHaveText){
     blackScreenElement.innerHTML = "";
+    mobileBlackScreenElement.innerHTML = "";
     doesBlackScreenHaveText = false;
   }
 }
 function buttonPress(num){
   clearTextOffScreen();
   blackScreenElement.innerHTML += num;
+  mobileBlackScreenElement.innerHTML += num;
+  console.log("Button Pressed");
 }
 function clearBlackScreen(){
   blackScreenElement.innerHTML = "";
+  mobileBlackScreenElement.innerHTML = "";
 }
 
 /* This function raises Tammy & her Money Bags */
@@ -177,5 +185,20 @@ function getMobileResultsSection(){
   mobileResultsSection.style.display = 'block';
 }
 function submitResults(){
-
+  console.log("Get Receipt button was clicked");
+}
+function verifyZipIsOkay(zipCode){
+  var isOkay = zipCode.length === 5;
+  console.log("isOkay", isOkay);
+  var integerZipCode = Number(zipCode);
+  /*
+    This if-statement checks if it is a valid WI zipCode
+    Will use it later. Let's just log results for now.
+   */
+  if( integerZipCode >= 53001 && integerZipCode <= 54990){
+    console.log("It is a valid WI zip code");
+  }else{
+    console.log("It is not a valid WI zip code.");
+  }
+  return isOkay;
 }

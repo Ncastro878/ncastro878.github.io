@@ -2,7 +2,6 @@
   display: none;
   &__results-box{
     text-align: center;
-
     &--box{
       display: inline-block;
       text-align: center;
@@ -10,9 +9,9 @@
       background-color: #EC4649;
       color: white;
       font-size: 30px;
-      margin-top: 140px;
       padding: 10px 20px;
       cursor: pointer;
+      margin-top: 140px;
     }
   }
   &__question{

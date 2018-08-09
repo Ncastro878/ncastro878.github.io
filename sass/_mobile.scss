@@ -25,10 +25,11 @@
     // margin-top: 50px;
     margin-bottom: 20px;
     width: 100%;
-
+    white-space: nowrap;
   }
   &__h1{
     display: inline-block;
+    white-space: nowrap;
   }
 
   &__tammy{
@@ -70,6 +71,7 @@
      margin-right: auto;
      animation: fadeIn 10.4s;
      animation-fill-mode: forwards;
+     margin-top: -50px;
    }
 
    &__marriage-page{
@@ -87,7 +89,7 @@
    }
 }//end of .mobile-intro
 .mobile-results-section__left-column--pic{
-  width: 75%;
+  width: 65%;
 }
 .mobile-form{
   margin-left: auto;
@@ -101,7 +103,19 @@
   margin-top: 70px;
 }
 .mobile-marriage-page__question{
-  margin-top: 60px !important;
+   // margin-top: 0px !important;
+}
+.header-animation-container{
+  width: 100%;
+  overflow: hidden;
+  animation: 4s eraseHeader;
+  animation-fill-mode: forwards;
+}
+#mobile-marriage-page{
+  margin-top: -200px;
+}
+#mobile-results-section{
+  margin-top: -150px;
 }
 @keyframes fadeIn{
   80%{
@@ -114,7 +128,20 @@
     opacity: 1;
   }
 }
-
+@keyframes eraseHeader{
+   65%{
+     width: 100%;
+    }
+   // 90%{
+   //   width: 0%;
+   //  }
+   85%{
+     width: 0%;
+   }
+   100%{
+     width: 0%;
+   }
+}
 @keyframes tammyRunForward {
   0% {
     transform: translateX(-150%);
@@ -135,6 +162,7 @@
    100%{
      width: 0;
      transform: translateX(-150%);
+     display: none;
    }
 }
 @keyframes bubble_one{
