@@ -17,6 +17,7 @@ var salaryTextPresent = false;
 var zipCode;
 var salary;
 var married = false;
+var amountTaxed;
 
 function equalClicked(){
   var enteredText = blackScreenElement.innerHTML;
@@ -177,12 +178,16 @@ function getResultsSection(){
   marriageSection.style.display = "none";
   var resultsSection = document.getElementById('results-section');
   resultsSection.style.display = 'block';
+  var taxes = calculateAmountTaxed(salary, married);
+  document.getElementById('tax-amount').innerHTML = taxes ;
 }
 function getMobileResultsSection(){
   var mobileMarriagePage = document.getElementById('mobile-marriage-page');
   mobileMarriagePage.style.display = 'none';
   var mobileResultsSection = document.getElementById('mobile-results-section');
   mobileResultsSection.style.display = 'block';
+  var taxes = calculateAmountTaxed(salary, married);
+  document.getElementById('tax-amount-mobile').innerHTML = taxes;
 }
 function submitResults(){
   console.log("Get Receipt button was clicked");
@@ -201,4 +206,46 @@ function verifyZipIsOkay(zipCode){
     console.log("It is not a valid WI zip code.");
   }
   return isOkay;
+}
+/*
+  Used this site: https://www.bankrate.com/finance/taxes/state-taxes-wisconsin.aspx
+  for tax brackets.
+*/
+function calculateAmountTaxed(enteredSalary, isMarried){
+  var tammyTax;
+  var intSalary = Number(enteredSalary)
+  if(isMarried){
+    if(intSalary <= 14980){
+      tammyTax = intSalary * .04;
+    }else if (intSalary <= 29960) {//over 14980
+      var taxableAmount = (intSalary - 14980) * .0584;
+      tammyTax = 599.2 + taxableAmount;
+    }else if(intSalary < 100000){//over 29960
+      var taxableAmount = (intSalary - 29960) * .0627;
+      tammyTax = 1474.032 + taxableAmount;
+    }else if(intSalary < 329810){ //over $100000
+      var taxableAmount = (intSalary - 100000) * .0627;
+      tammyTax = 5865.54  + taxableAmount;
+    }else{ //over $329810
+      var taxableAmount = (intSalary - 247350) * .0765;
+      tammyTax = 20274.627  + taxableAmount;
+    }
+  }else{
+    if(intSalary <= 11230){
+        tammyTax = intSalary * .04;
+    }else if (intSalary <= 22470) {
+        var taxableAmount = (intSalary - 11230) * .0584;
+        tammyTax = taxableAmount + 449.20;
+    }else if(intSalary <= 100000){
+        var taxableAmount = (intSalary - 22470 ) * .0627;
+        tammyTax = taxableAmount + 1105.616;
+    }else if(intSalary <= 247350){
+        var taxableAmount = (intSalary - 100000) * .0627;
+        tammyTax = taxableAmount + 5966.747;
+    }else{
+      var taxableAmount = (intSalary - 247350) * .0765;
+      tammyTax = taxableAmount + 15205.592;
+    }
+  }
+  return tammyTax.toFixed(2);
 }
